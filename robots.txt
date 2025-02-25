@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://healing-haven.vercel.app/sitemap.xml

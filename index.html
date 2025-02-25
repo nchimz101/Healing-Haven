@@ -3,7 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healing Haven</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; img-src 'self' https://images.unsplash.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
+    <title>Healing Haven - Mobile Massage Therapy in Ndola, Zambia</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Healing Haven offers premium mobile massage therapy services in Ndola, Zambia. Enjoy relaxing massages in the comfort of your home, office, or hotel.">
+    <meta name="keywords" content="massage therapy, mobile massage, Ndola, Zambia, spa services, relaxation, Swedish massage, Thai massage, foot therapy, facial therapy">
+    <meta name="author" content="Healing Haven">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://healing-haven.vercel.app/">
+    <meta property="og:title" content="Healing Haven - Mobile Massage Therapy in Ndola, Zambia">
+    <meta property="og:description" content="Expert massage therapy brought to your doorstep in Ndola, Zambia. Book your relaxation session today!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://healing-haven.vercel.app/">
+    <meta property="twitter:title" content="Healing Haven - Mobile Massage Therapy in Ndola, Zambia">
+    <meta property="twitter:description" content="Expert massage therapy brought to your doorstep in Ndola, Zambia. Book your relaxation session today!">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://healing-haven.vercel.app/">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -121,6 +151,66 @@
             font-size: 24px;
         }
     </style>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Healing Haven",
+        "image": "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&q=80",
+        "description": "Mobile massage therapy services in Ndola, Zambia",
+        "url": "https://healing-haven.vercel.app/",
+        "telephone": "+260977666226",
+        "email": "thandipa@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ndola",
+            "addressRegion": "Copperbelt",
+            "addressCountry": "Zambia"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -12.9687,
+            "longitude": 28.6366
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "20:00"
+        },
+        "priceRange": "K300-K1250",
+        "sameAs": [
+            "https://facebook.com/healinghaven",
+            "https://instagram.com/healinghaven_zm"
+        ],
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Facial + Head & Neck Therapy",
+                "price": "300",
+                "priceCurrency": "ZMK",
+                "description": "Refresh and relieve tension in your head & neck."
+            },
+            {
+                "@type": "Offer",
+                "name": "Full Body Experience",
+                "price": "1250",
+                "priceCurrency": "ZMK",
+                "description": "The ultimate package for complete mind & body renewal."
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -329,7 +419,7 @@
                     
                     <div class="flex items-center">
                         <i class="fas fa-map-marker-alt text-warm-gold text-xl mr-3"></i>
-                        <p class="text-lg font-medium">Serving [Your City/Region]</p>
+                        <p class="text-lg font-medium">Serving Ndola, Zambia</p>
                     </div>
                 </div>
             </div>
@@ -591,8 +681,33 @@
 
     <!-- Footer -->
     <footer class="bg-deep-mocha text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 Healing Haven | Ndola, Zambia | All rights reserved</p>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold">🌿 Healing Haven</span>
+                    <p class="mt-2">Your path to wellness, anywhere in Ndola</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://facebook.com/healinghaven" class="text-white hover:text-warm-gold transition-colors" aria-label="Facebook">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://instagram.com/healinghaven_zm" class="text-white hover:text-warm-gold transition-colors" aria-label="Instagram">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://wa.me/260977666226" class="text-white hover:text-warm-gold transition-colors" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 pt-6 flex flex-col md:flex-row justify-between">
+                <p>&copy; 2024 Healing Haven | Ndola, Zambia | All rights reserved</p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="text-white hover:text-warm-gold mr-4">Privacy Policy</a>
+                    <a href="#" class="text-white hover:text-warm-gold">Terms of Service</a>
+                </div>
+            </div>
         </div>
     </footer>
     
@@ -631,11 +746,55 @@
             bookingForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                // Collect form data
+                // Validate all required fields
+                const requiredFields = bookingForm.querySelectorAll('[required]');
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.classList.add('border-red-500');
+                        
+                        // Add validation message if doesn't exist
+                        let errorMessage = field.parentElement.querySelector('.error-message');
+                        if (!errorMessage) {
+                            errorMessage = document.createElement('p');
+                            errorMessage.className = 'error-message text-red-500 text-sm mt-1';
+                            errorMessage.textContent = 'This field is required';
+                            field.parentElement.appendChild(errorMessage);
+                        }
+                    } else {
+                        field.classList.remove('border-red-500');
+                        const errorMessage = field.parentElement.querySelector('.error-message');
+                        if (errorMessage) errorMessage.remove();
+                    }
+                });
+                
+                // Validate email format
+                const emailField = document.getElementById('email');
+                if (emailField.value && !isValidEmail(emailField.value)) {
+                    isValid = false;
+                    emailField.classList.add('border-red-500');
+                    
+                    let errorMessage = emailField.parentElement.querySelector('.error-message');
+                    if (!errorMessage) {
+                        errorMessage = document.createElement('p');
+                        errorMessage.className = 'error-message text-red-500 text-sm mt-1';
+                        errorMessage.textContent = 'Please enter a valid email address';
+                        emailField.parentElement.appendChild(errorMessage);
+                    } else {
+                        errorMessage.textContent = 'Please enter a valid email address';
+                    }
+                }
+                
+                // If form is not valid, exit early
+                if (!isValid) return;
+                
+                // Collect form data and sanitize inputs
                 const formData = new FormData(bookingForm);
                 const bookingData = {};
                 formData.forEach((value, key) => {
-                    bookingData[key] = value;
+                    bookingData[key] = sanitizeInput(value);
                 });
                 
                 // In a real application, you would send this data to your server
@@ -644,9 +803,6 @@
                 // For demonstration, we'll just simulate a successful submission
                 bookingForm.reset();
                 bookingSuccess.classList.remove('hidden');
-                
-                // Optionally, send email notification using emailjs or similar service
-                // This would require setting up an account with such a service
                 
                 // Scroll to success message
                 setTimeout(() => {
@@ -658,21 +814,72 @@
                     bookingSuccess.classList.add('hidden');
                 }, 5000);
             });
+            
+            // Remove error styling on input
+            bookingForm.querySelectorAll('input, select, textarea').forEach(field => {
+                field.addEventListener('input', function() {
+                    this.classList.remove('border-red-500');
+                    const errorMessage = this.parentElement.querySelector('.error-message');
+                    if (errorMessage) errorMessage.remove();
+                });
+            });
         }
         
-        // Handle contact form submission
-        const contactForm = document.getElementById('contactForm');
-        const contactSuccess = document.getElementById('contactSuccess');
-        
+        // Apply same enhanced validation to contact form
         if (contactForm) {
             contactForm.addEventListener('submit', function(e) {
+                // Similar enhanced validation as booking form
                 e.preventDefault();
                 
-                // Collect form data
+                // Validate all required fields
+                const requiredFields = contactForm.querySelectorAll('[required]');
+                let isValid = true;
+                
+                requiredFields.forEach(field => {
+                    if (!field.value.trim()) {
+                        isValid = false;
+                        field.classList.add('border-red-500');
+                        
+                        // Add validation message
+                        let errorMessage = field.parentElement.querySelector('.error-message');
+                        if (!errorMessage) {
+                            errorMessage = document.createElement('p');
+                            errorMessage.className = 'error-message text-red-500 text-sm mt-1';
+                            errorMessage.textContent = 'This field is required';
+                            field.parentElement.appendChild(errorMessage);
+                        }
+                    } else {
+                        field.classList.remove('border-red-500');
+                        const errorMessage = field.parentElement.querySelector('.error-message');
+                        if (errorMessage) errorMessage.remove();
+                    }
+                });
+                
+                // Validate email format
+                const emailField = document.getElementById('contactEmail');
+                if (emailField.value && !isValidEmail(emailField.value)) {
+                    isValid = false;
+                    emailField.classList.add('border-red-500');
+                    
+                    let errorMessage = emailField.parentElement.querySelector('.error-message');
+                    if (!errorMessage) {
+                        errorMessage = document.createElement('p');
+                        errorMessage.className = 'error-message text-red-500 text-sm mt-1';
+                        errorMessage.textContent = 'Please enter a valid email address';
+                        emailField.parentElement.appendChild(errorMessage);
+                    } else {
+                        errorMessage.textContent = 'Please enter a valid email address';
+                    }
+                }
+                
+                // If form is not valid, exit early
+                if (!isValid) return;
+                
+                // Collect form data and sanitize inputs
                 const formData = new FormData(contactForm);
                 const contactData = {};
                 formData.forEach((value, key) => {
-                    contactData[key] = value;
+                    contactData[key] = sanitizeInput(value);
                 });
                 
                 // In a real application, you would send this data to your server
@@ -681,9 +888,6 @@
                 // For demonstration, we'll just simulate a successful submission
                 contactForm.reset();
                 contactSuccess.classList.remove('hidden');
-                
-                // Optionally, send email notification using emailjs or similar service
-                // This would require setting up an account with such a service
                 
                 // Scroll to success message
                 setTimeout(() => {
@@ -695,6 +899,27 @@
                     contactSuccess.classList.add('hidden');
                 }, 5000);
             });
+            
+            // Remove error styling on input
+            contactForm.querySelectorAll('input, textarea').forEach(field => {
+                field.addEventListener('input', function() {
+                    this.classList.remove('border-red-500');
+                    const errorMessage = this.parentElement.querySelector('.error-message');
+                    if (errorMessage) errorMessage.remove();
+                });
+            });
+        }
+        
+        // Email validation helper function
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Enhanced form security validation
+        function sanitizeInput(input) {
+            // Basic input sanitization
+            return input.replace(/[^\w\s@.\/\-]/gi, '');
         }
         
         // Check for URL parameters for success messages
@@ -720,6 +945,80 @@
                     contactSuccess.classList.add('hidden');
                 }, 5000);
             }
+        });
+
+        // Add simple sitemap for search engines
+        const createSitemap = () => {
+            const sitemapData = {
+                pages: [
+                    {
+                        url: "https://healing-haven.vercel.app/",
+                        title: "Home",
+                        lastModified: "2024-06-15",
+                        priority: "1.0"
+                    },
+                    {
+                        url: "https://healing-haven.vercel.app/#services",
+                        title: "Services",
+                        lastModified: "2024-06-15",
+                        priority: "0.8"
+                    },
+                    {
+                        url: "https://healing-haven.vercel.app/#about",
+                        title: "About",
+                        lastModified: "2024-06-15",
+                        priority: "0.7"
+                    },
+                    {
+                        url: "https://healing-haven.vercel.app/#booking",
+                        title: "Booking",
+                        lastModified: "2024-06-15",
+                        priority: "0.9"
+                    },
+                    {
+                        url: "https://healing-haven.vercel.app/#testimonials",
+                        title: "Testimonials",
+                        lastModified: "2024-06-15",
+                        priority: "0.6"
+                    },
+                    {
+                        url: "https://healing-haven.vercel.app/#contact",
+                        title: "Contact",
+                        lastModified: "2024-06-15",
+                        priority: "0.8"
+                    }
+                ]
+            };
+            
+            // In a real implementation, you would generate an XML sitemap file
+            console.log("Sitemap data ready for XML generation:", sitemapData);
+        };
+        
+        // Load performance optimization
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lazy load images that are off-screen
+            if ('IntersectionObserver' in window) {
+                const imgObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            const src = img.getAttribute('data-src');
+                            if (src) {
+                                img.setAttribute('src', src);
+                                img.removeAttribute('data-src');
+                            }
+                            observer.unobserve(img);
+                        }
+                    });
+                });
+                
+                document.querySelectorAll('img[data-src]').forEach(img => {
+                    imgObserver.observe(img);
+                });
+            }
+            
+            // Initialize sitemap data
+            createSitemap();
         });
     </script>
 </body>
